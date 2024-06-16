@@ -17,7 +17,7 @@
                         {{ __('Dashboard') }}
                     </x-nav-link>
                     {{-- Pengguna --}}
-                    <x-nav-link :href="route('dashboard.user.index')" :active="request()->routeIs('dashboard.user.index')">
+                    <x-nav-link :href="route('dashboard.user.index')" :active="request()->routeIs('dashboard.user.*')">
                         {{ __('Manajemen Pengguna') }}
                     </x-nav-link>
                 </div>
