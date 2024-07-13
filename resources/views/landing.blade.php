@@ -105,7 +105,7 @@
         <div class="h-full max-w-6xl px-8 py-24 mx-auto md:px-12 lg:px-32">
             <div class="text-center">
                 <h2 class="text-4xl font-semibold tracking-tighter text-gray-900 lg:text-6xl">
-                    Harga
+                    Daftar Harga
                 </h2>
                 <p class="max-w-xs mx-auto mt-4 text-sm text-gray-500">
                     Jelajahi paket yang kami tawarkan untuk memenuhi kebutuhan Anda
@@ -115,12 +115,31 @@
                 <div class="flex flex-col justify-between h-full gap-8 p-8 bg-gray-100 rounded-4xl">
                     <div>
                         <h3 class="text-base font-medium tracking-tight text-gray-900">
-                            Limitless - $2999/month
+                            Paket Silver - Rp100.000
                         </h3>
-                        <p class="mt-4 text-sm text-gray-500">
-                            Infinite requests and revisions, with the flexibility to cancel at
-                            any time. Ideal for startups and agencies.
+                        {{-- <p class="mt-4 text-sm text-gray-500">
+                            - Mandi dengan sampo khusus hipoalergenik
                         </p>
+                        <p class="mt-4 text-sm text-gray-500">
+                            - Pembersihan telinga dan kuku
+                        </p>
+                        <p class="mt-4 text-sm text-gray-500">
+                             - Penyisiran bulu
+                        </p> --}}
+<ul class="max-w-md space-y-1 text-gray-500 list-disc list-inside dark:text-gray-400">
+    <li>
+        Mandi sampo hipoalergenik
+    </li>
+    <li>
+        Pembersihan telinga & kuku
+    </li>
+    <li>
+        Penyisiran bulu
+    </li>
+     <li>
+        Pengeringan kilat
+    </li>
+</ul>
                     </div>
                     <a class="flex items-center justify-center w-auto h-10 px-4 py-2 text-sm font-semibold text-gray-900 transition-all bg-white rounded-full shrink-0 hover:bg-gray-800 hover:text-white"
                         href="/contact">Get started</a>
@@ -128,12 +147,20 @@
                 <div class="flex flex-col justify-between h-full gap-8 p-8 bg-black rounded-4xl">
                     <div>
                         <h3 class="text-base font-medium tracking-tight text-white">
-                            Set Rate - $299/page
+                           Paket Gold - Rp.200.000
                         </h3>
-                        <p class="mt-4 text-sm text-white">
-                            Transparent fixed pricing from the start. Perfect for designers or
-                            those well-versed in Jamstack.
-                        </p>
+                        <ul class="max-w-md space-y-1 text-gray-500 list-disc list-inside dark:text-gray-400">
+    <li>
+        Termasuk semua dari paket silver +:
+    </li>
+    <li>
+        gropming sesuai ras
+    </li>
+    <li>
+        Potong bulu sesuai permintaan
+    </li>
+
+</ul>
                     </div>
                     <a class="flex items-center justify-center w-auto h-10 px-4 py-2 text-sm font-semibold text-gray-900 transition-all bg-white rounded-full shrink-0 hover:bg-gray-800 hover:text-white"
                         href="/start">Get started</a>
@@ -141,12 +168,20 @@
                 <div class="flex flex-col justify-between h-full gap-8 p-8 bg-gray-100 rounded-4xl">
                     <div>
                         <h3 class="text-base font-medium tracking-tight text-gray-900">
-                            Tailored Quotation
+                           Paket Platinum - Rp.300.000
                         </h3>
-                        <p class="mt-4 text-sm text-gray-500">
-                            Expect your estimate within 1 business day. Ideal for individuals
-                            new to Jamstack architecture or intricate projects.
-                        </p>
+                        <ul class="max-w-md space-y-1 text-gray-500 list-disc list-inside dark:text-gray-400">
+    <li>
+        Termasuk semua dari paket gold ++:
+    </li>
+    <li>
+        Pilihan makanan premium
+    </li>
+    <li>
+        Layanan tambahan sesuai kebutuhan
+    </li>
+
+</ul>
                     </div>
                     <a class="flex items-center justify-center w-auto h-10 px-4 py-2 text-sm font-semibold text-gray-900 transition-all bg-white rounded-full shrink-0 hover:bg-gray-800 hover:text-white"
                         href="/contact">Get in touch</a>
