@@ -4,6 +4,7 @@ namespace App\Http\Controllers\Admin;
 
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\DB;
 
 class UserController extends Controller
 {
@@ -12,7 +13,8 @@ class UserController extends Controller
         return view('admin.user.index');
     }
 
-    function create() {
+    function create()
+    {
         return view('admin.user.create');
     }
 }
