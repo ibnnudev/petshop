@@ -6,8 +6,10 @@
                 class="relative flex flex-col w-full max-w-6xl px-8 py-4 mx-auto bg-white md:px-12 md:items-center md:justify-between md:flex-row lg:px-32">
                 <div class="flex flex-row items-center justify-between text-gray-900">
                     <a class="inline-flex items-center gap-3 text-xl font-bold tracking-tight text-gray-900 uppercase"
-                        href="/">Toko Hewan</a><button
-                        class="rounded-lg md:hidden focus:outline-none focus:shadow-outline" @click="open = !open">
+                        href="/">
+                        <img src="{{ asset('images/hero.png') }}" alt="logo" class="h-12">
+                    </a><button class="rounded-lg md:hidden focus:outline-none focus:shadow-outline"
+                        @click="open = !open">
                         <svg class="size-6" stroke="currentColor" fill="none" viewBox="0 0 24 24">
                             <path :class="{ 'hidden': open, 'inline-flex': !open }" class="inline-flex"
                                 stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
@@ -28,7 +30,7 @@
                         href="#layanan">Layanan </a><a
                         class="py-2 text-xs font-semibold text-gray-900 uppercase hover:text-gray-400 focus:outline-none focus:shadow-none focus:text-gray-900/90"
                         href="#blog">Blog </a><a
-                        class="flex items-center justify-center w-auto h-8 px-4 py-2 text-xs font-semibold text-white uppercase transition-all bg-black rounded-full shrink-0 hover:bg-accent-500"
+                        class="flex items-center justify-center w-auto h-8 px-4 py-2 text-xs font-semibold text-white uppercase transition-all bg-green-600 rounded-full shrink-0 hover:bg-accent-500"
                         href="#_" role="button">Bergabung franchise kami</a>
                 </nav>
             </div>
@@ -36,41 +38,53 @@
     </section>
     <section>
         <div class="relative h-full py-12 mx-auto">
-            <div class=" lg:text-center">
-                <section
-                    class="bg-center bg-no-repeat bg-[url('https://flowbite.s3.amazonaws.com/docs/jumbotron/conference.jpg')] bg-gray-700 bg-blend-multiply">
-                    <div class="px-4 mx-auto max-w-screen-xl text-center py-24 lg:py-56">
+            <div class="lg:text-center pt-12">
+                <div
+                    class="px-7 lg:px-24 max-w-6xl mx-auto flex flex-col gap-y-10 lg:flex-row items-center gap-x-10 justify-center py-10 lg:py-14 dark:bg-gray-800">
+                    <div class="lg:w-[650px] lg:px-5 flex flex-col gap-y-5">
                         <h1
-                            class="mb-4 text-4xl font-extrabold tracking-tight leading-none text-white md:text-5xl lg:text-6xl">
-                            Temukan Kesejahteraan Hewan <br>Peliharaan Anda</h1>
-                        <p class="mb-8 text-lg font-normal text-gray-300 lg:text-xl sm:px-16 lg:px-48">kami memahami
-                            bahwa hewan peliharaan Anda adalah bagian dari keluarga Anda</p>
-                        <div class="flex flex-col space-y-4 sm:flex-row sm:justify-center sm:space-y-0">
+                            class="text-4xl md:text-5xl xl:text-[50px] leading-[1.2] md:max-w-xl md:mx-auto md:text-center lg:text-left lg:mx-0 lg:max-w-full font-extrabold dark:text-white">
+                            Selamat Datang Di Toko Hewan Kami
+                        </h1>
+                        <p
+                            class="text-sm md:max-w-xl md:mx-auto lg:mx-0 lg:max-w-full md:text-center lg:text-left dark:text-gray-300">
+                            Kami menyediakan berbagai macam kebutuhan hewan peliharaan Anda
+                        </p>
+                        <div class="flex gap-x-5 flex-col gap-y-2.5 lg:flex-row">
                             <a href="#"
-                                class="inline-flex justify-center items-center py-3 px-5 text-base font-medium text-center text-white rounded-lg bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 dark:focus:ring-blue-900">
-                                Jelajahi sekarang
-                                <svg class="w-3.5 h-3.5 ms-2 rtl:rotate-180" aria-hidden="true"
-                                    xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
-                                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
-                                        stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9" />
-                                </svg>
+                                class="flex w-full lg:w-fit items-center text-white justify-center rounded-lg bg-green-600 px-6 py-2.5 font-semibold hover:shadow-lg hover:drop-shadow transition duration-200">
+                                <span>
+                                    Mulai belanja
+                                </span>
                             </a>
                             <a href="#"
-                                class="inline-flex justify-center hover:text-gray-900 items-center py-3 px-5 sm:ms-4 text-base font-medium text-center text-white rounded-lg border border-white hover:bg-gray-100 focus:ring-4 focus:ring-gray-400">
-                                Pelajari selengkapnya
+                                class="flex w-full lg:w-fit items-center text-green-600 justify-center rounded-lg border border-green-500 px-6 py-2.5 font-semibold hover:shadow-lg hover:drop-shadow transition duration-200 bg-green-50 dark:text-white dark:bg-transparent dark:border-gray-500/50">
+                                <span>
+                                    Hubungi kami
+                                </span>
                             </a>
                         </div>
                     </div>
-                </section>
+                    <div
+                        class="hero-image md:px-5 lg:px-0 w-full lg:w-1/2 rounded-3xl md:pt-2 lg:pt-0 relative isolate z-10">
+                        <img class="rounded-3xl w-full" src="{{ asset('images/hero.png') }}" alt="">
+                    </div>
+                </div>
+
             </div>
         </div>
     </section>
     <section>
         <div class="h-full max-w-6xl px-8 pb-12 mx-auto md:px-12 lg:px-32">
-            <div class="px-6 mx-auto max-w-7xl lg:px-8">
-                <h2 class="text-xl font-semibold leading-8 text-center text-gray-900">
-                    Layanan Kami
-                </h2>
+            <div class="px-6 mx-auto max-w-6xl lg:px-8">
+                <div class="text-center">
+                    <h2 class="text-4xl font-semibold tracking-tighter text-gray-900 lg:text-4xl">
+                        Layanan Kami
+                    </h2>
+                    <p class="max-w-xs mx-auto mt-4 text-sm text-gray-500">
+                        Menyesuaikan kebutuhan hewan peliharaan Anda
+                    </p>
+                </div>
                 <div
                     class="grid items-center max-w-lg grid-cols-4 mx-auto mt-20 gap-x-8 gap-y-10 sm:max-w-xl sm:gap-x-10 lg:mx-0 lg:max-w-none">
                     <div class="space-y-3 text-center">
@@ -104,7 +118,7 @@
     <section class="scroll-mt-24 o" id="pricing">
         <div class="h-full max-w-6xl px-8 py-24 mx-auto md:px-12 lg:px-32">
             <div class="text-center">
-                <h2 class="text-4xl font-semibold tracking-tighter text-gray-900 lg:text-6xl">
+                <h2 class="text-4xl font-semibold tracking-tighter text-gray-900 lg:text-4xl">
                     Daftar Harga
                 </h2>
                 <p class="max-w-xs mx-auto mt-4 text-sm text-gray-500">
@@ -112,83 +126,75 @@
                 </p>
             </div>
             <div class="grid grid-cols-1 gap-2 mt-24 lg:grid-cols-3">
-                <div class="flex flex-col justify-between h-full gap-8 p-8 bg-gray-100 rounded-4xl">
+                <div class="flex flex-col justify-between h-full gap-8 p-8 bg-gray-100 rounded-xl">
                     <div>
-                        <h3 class="text-base font-medium tracking-tight text-gray-900">
+                        <h3 class="text-base font-medium tracking-tight text-gray-900 mb-4">
                             Paket Silver - Rp100.000
                         </h3>
-                        {{-- <p class="mt-4 text-sm text-gray-500">
-                            - Mandi dengan sampo khusus hipoalergenik
-                        </p>
-                        <p class="mt-4 text-sm text-gray-500">
-                            - Pembersihan telinga dan kuku
-                        </p>
-                        <p class="mt-4 text-sm text-gray-500">
-                             - Penyisiran bulu
-                        </p> --}}
-<ul class="max-w-md space-y-1 text-gray-500 list-disc list-inside dark:text-gray-400">
-    <li>
-        Mandi sampo hipoalergenik
-    </li>
-    <li>
-        Pembersihan telinga & kuku
-    </li>
-    <li>
-        Penyisiran bulu
-    </li>
-     <li>
-        Pengeringan kilat
-    </li>
-</ul>
+                        <ul class="max-w-md space-y-1 text-gray-500 list-disc list-inside dark:text-gray-400">
+                            <li>
+                                Mandi sampo hipoalergenik
+                            </li>
+                            <li>
+                                Pembersihan telinga & kuku
+                            </li>
+                            <li>
+                                Penyisiran bulu
+                            </li>
+                            <li>
+                                Pengeringan kilat
+                            </li>
+                        </ul>
                     </div>
-                    <a class="flex items-center justify-center w-auto h-10 px-4 py-2 text-sm font-semibold text-gray-900 transition-all bg-white rounded-full shrink-0 hover:bg-gray-800 hover:text-white"
-                        href="/contact">Get started</a>
+                    <a class="flex items-center justify-center w-auto h-10 px-4 py-2 text-sm font-semibold text-gray-900 transition-all bg-white rounded-full shrink-0 hover:bg-green-500 hover:text-white"
+                        href="/contact">Mulai Berlangganan</a>
                 </div>
-                <div class="flex flex-col justify-between h-full gap-8 p-8 bg-black rounded-4xl">
+                <div class="flex flex-col justify-between h-full gap-8 p-8 bg-green-600 rounded-xl">
                     <div>
-                        <h3 class="text-base font-medium tracking-tight text-white">
-                           Paket Gold - Rp.200.000
+                        <h3 class="text-base font-medium tracking-tight text-white mb-4">
+                            Paket Gold - Rp.200.000
+                        </h3>
+                        <ul class="max-w-md space-y-1 text-white list-disc list-inside">
+                            <li>
+                                Semua layanan paket Silver
+                            </li>
+                            <li>
+                                Grooming sesuai ras
+                            </li>
+                            <li>
+                                Potong bulu by request
+                            </li>
+
+                        </ul>
+                    </div>
+                    <a class="flex items-center justify-center w-auto h-10 px-4 py-2 text-sm font-semibold text-gray-900 transition-all bg-white rounded-full shrink-0 hover:bg-green-500 hover:text-white"
+                        href="/start">Mulai Berlangganan</a>
+                </div>
+                <div class="flex flex-col justify-between h-full gap-8 p-8 bg-gray-100 rounded-xl">
+                    <div>
+                        <h3 class="text-base font-medium tracking-tight text-gray-900 mb-4">
+                            Paket Platinum - Rp.300.000
                         </h3>
                         <ul class="max-w-md space-y-1 text-gray-500 list-disc list-inside dark:text-gray-400">
-    <li>
-        paket silver +:
-    </li>
-    <li>
-        gropming sesuai ras
-    </li>
-    <li>
-        Potong bulu sesuai permintaan
-    </li>
+                            <li>
+                                Semua layanan paket Gold
+                            </li>
+                            <li>
+                                Pilihan makanan premium
+                            </li>
+                            <li>
+                                Layanan sesuai kebutuhan
+                            </li>
 
-</ul>
+                        </ul>
                     </div>
-                    <a class="flex items-center justify-center w-auto h-10 px-4 py-2 text-sm font-semibold text-gray-900 transition-all bg-white rounded-full shrink-0 hover:bg-gray-800 hover:text-white"
-                        href="/start">Get started</a>
-                </div>
-                <div class="flex flex-col justify-between h-full gap-8 p-8 bg-gray-100 rounded-4xl">
-                    <div>
-                        <h3 class="text-base font-medium tracking-tight text-gray-900">
-                           Paket Platinum - Rp.300.000
-                        </h3>
-                        <ul class="max-w-md space-y-1 text-gray-500 list-disc list-inside dark:text-gray-400">
-    <li>
-        paket gold ++:
-    </li>
-    <li>
-        Pilihan makanan premium
-    </li>
-    <li>
-        Layanan tambahan sesuai kebutuhan
-    </li>
-
-</ul>
-                    </div>
-                    <a class="flex items-center justify-center w-auto h-10 px-4 py-2 text-sm font-semibold text-gray-900 transition-all bg-white rounded-full shrink-0 hover:bg-gray-800 hover:text-white"
-                        href="/contact">Get in touch</a>
+                    <a class="flex items-center justify-center w-auto h-10 px-4 py-2 text-sm font-semibold text-gray-900 transition-all bg-white rounded-full shrink-0 hover:bg-green-500 hover:text-white"
+                        href="/contact">Hubungi Kami</a>
                 </div>
             </div>
         </div>
     </section>
+
     <section class="scroll-mt-24" id="faq">
         <div class="h-full max-w-6xl px-8 py-24 mx-auto md:px-12 lg:px-32">
             <div class="grid grid-cols-1 gap-12 lg:grid-cols-3">
@@ -197,67 +203,57 @@
                         FAQ
                     </p>
                     <p class="max-w-xs mx-auto mt-4 text-sm text-gray-500">
-                        Frequent questions &amp; answers
+                        Temukan jawaban atas pertanyaan umum yang sering diajukan
                     </p>
                 </div>
                 <div class="flex flex-col gap-6 text-base text-gray-400 lg:col-span-2">
                     <details>
                         <summary class="text-base font-medium tracking-tight text-gray-900">
-                            What does Jamstack entail?
+                            Bagaimana cara memesan layanan di petshop ini?
                         </summary>
                         <p class="pt-4 text-sm text-gray-500">
-                            JAMstack is an innovative approach to web development that stands
-                            for JavaScript, APIs, and Markdown. It's all about creating faster
-                            websites with improved SEO rankings and a better overall user
-                            experience.
+                            Untuk memesan layanan di petshop kami, Anda dapat mengunjungi website kami dan memilih
+                            layanan yang Anda inginkan dari menu yang tersedia. Setelah itu, ikuti langkah-langkah yang
+                            tertera untuk menyelesaikan proses pemesanan.
                         </p>
                     </details>
                     <details>
                         <summary class="text-base font-medium tracking-tight text-gray-900">
-                            What coding languages ?
+                            Apakah ada biaya tambahan untuk grooming hewan peliharaan?
                         </summary>
                         <p class="pt-4 text-sm text-gray-500">
-                            We utilize a range of modern technologies and languages to create
-                            your websites, including HTML, CSS, JavaScript, and various
-                            frameworks like React or Vue.js. Additionally, we work with headless
-                            Content Management Systems (CMS) and APIs to manage content
-                            efficiently.
+                            Ya, biaya grooming dapat bervariasi tergantung pada ukuran dan jenis hewan peliharaan Anda.
+                            Silakan hubungi kami untuk informasi lebih lanjut atau lihat halaman layanan kami untuk
+                            detail harga.
                         </p>
                     </details>
                     <details>
                         <summary class="text-base font-medium tracking-tight text-gray-900">
-                            How fast will I get my coded website?
+                            Berapa lama waktu yang dibutuhkan untuk proses grooming?
                         </summary>
                         <p class="pt-4 text-sm text-gray-500">
-                            The speed of delivery depends on the complexity of your project and
-                            your specific requirements. We aim to provide swift delivery, and
-                            we'll discuss the timeline during our initial consultation. Rest
-                            assured, we're committed to delivering your website as efficiently
-                            as possible.
+                            Waktu yang dibutuhkan untuk proses grooming tergantung pada jenis layanan yang Anda pilih
+                            dan kondisi bulu hewan peliharaan Anda. Biasanya, proses grooming dapat memakan waktu antara
+                            1-3 jam.
                         </p>
                     </details>
                     <details>
                         <summary class="text-base font-medium tracking-tight text-gray-900">
-                            How can I check the progress of my website?
+                            Apakah petshop ini menyediakan layanan vaksinasi untuk hewan peliharaan?
                         </summary>
                         <p class="pt-4 text-sm text-gray-500">
-                            We'll set up a convenient communication channel, such as email or a
-                            project management platform, to keep you updated on the progress of
-                            your website. You can communicate with us, ask questions, and
-                            provide feedback through this channel to ensure a smooth
-                            collaboration.
+                            Ya, kami menyediakan layanan vaksinasi untuk hewan peliharaan. Silakan hubungi kami untuk
+                            jadwal vaksinasi dan informasi lebih lanjut mengenai jenis vaksin yang tersedia.
                         </p>
                     </details>
                     <details>
                         <summary class="text-base font-medium tracking-tight text-gray-900">
-                            If I have a blog, do you count each post as a separate page?
+                            Bagaimana cara menghubungi layanan pelanggan?
                         </summary>
                         <p class="pt-4 text-sm text-gray-500">
-                            The way we structure and charge for your blog pages can vary
-                            depending on your specific needs. Generally, individual blog posts
-                            can be counted as separate pages, but this can be discussed and
-                            tailored to your preferences during our project discussions. We aim
-                            to be flexible and accommodating to meet your requirements.
+                            Anda dapat menghubungi tim layanan pelanggan kami melalui email di info@petshop.com atau
+                            melalui telepon di (021) 1234-5678. Kami siap membantu Anda dengan pertanyaan atau kebutuhan
+                            Anda terkait dengan layanan kami.
                         </p>
                     </details>
                 </div>
@@ -270,48 +266,47 @@
                 <div class="border-gray-900 xl:grid xl:grid-cols-3 xl:gap-8">
                     <div class="text-black">
                         <div class="inline-flex items-center gap-3">
-                            <p class="text-2xl font-bold uppercase">Agency</p>
+                            <p class="text-2xl font-bold uppercase">Toko Hewan</p>
                         </div>
                         <p class="mt-2 text-sm text-gray-500 lg:w-4/5">
-                            Windstatic, basic and sturdy themes under the creative commons
-                            license.
+                            Layanan terbaik di Indonesia
                         </p>
                     </div>
                     <div class="grid grid-cols-2 gap-8 mt-12 lg:grid-cols-3 lg:mt-0 xl:col-span-2">
                         <div>
-                            <h3 class="text-black">Information</h3>
+                            <h3 class="text-black">Informasi</h3>
                             <ul role="list" class="mt-4 space-y-2">
                                 <li>
                                     <a href="#_" class="text-sm text-gray-500 hover:text-black">
-                                        License
+                                        Layanan
                                     </a>
                                 </li>
                             </ul>
                         </div>
                         <div>
-                            <h3 class="text-black">Socials</h3>
+                            <h3 class="text-black">Medsos</h3>
                             <ul role="list" class="mt-4 space-y-2">
                                 <li>
                                     <a href="https://twitter.com/lexingtonthemes"
                                         class="text-sm text-gray-500 hover:text-black">
-                                        @lexingtonthemes
+                                        @petshoparif
                                     </a>
                                 </li>
                                 <li>
                                     <a href="https://twitter.com/Mike_Andreuzza"
                                         class="text-sm text-gray-500 hover:text-black">
-                                        @Mike_Andreuzza
+                                        @ibnu
                                     </a>
                                 </li>
                             </ul>
                         </div>
                         <div class="mt-12 md:mt-0">
-                            <h3 class="text-black">Premium Themes</h3>
+                            <h3 class="text-black">Alamat</h3>
                             <ul role="list" class="mt-4 space-y-2">
                                 <li>
                                     <a href="https://lexingtonthemes.com/"
                                         class="text-sm text-gray-500 hover:text-black">
-                                        Lexington Themes
+                                        Jl. Jend. Sudirman No. 123, Jakarta
                                     </a>
                                 </li>
                             </ul>
@@ -321,10 +316,7 @@
                 <div class="flex flex-col pt-12 md:flex-row md:items-center md:justify-between">
                     <p class="text-left">
                         <span class="mx-auto mt-2 text-sm text-gray-500 lg:mx-0">
-                            © Windstatic. By:
-                            <a class="text-black hover:text-accent-500" href="https://michaelandreuzza.com/">Michael
-                                Andreuzza</a>
-                            Demo Images: Respective owners.
+                            © 2021 Toko Hewan. All rights reserved.
                         </span>
                     </p>
                 </div>
