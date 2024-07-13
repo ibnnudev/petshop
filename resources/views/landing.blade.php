@@ -1,78 +1,40 @@
 <x-guest-layout>
-
-    <section class="fixed z-50 justify-center w-full mx-auto bg-white border-b">
-        <div class="relative justify-center w-full mx-auto bg-white">
-            <div x-data="{ open: false }"
-                class="relative flex flex-col w-full max-w-6xl px-8 py-4 mx-auto bg-white md:px-12 md:items-center md:justify-between md:flex-row lg:px-32">
-                <div class="flex flex-row items-center justify-between text-gray-900">
-                    <a class="inline-flex items-center gap-3 text-xl font-bold tracking-tight text-gray-900 uppercase"
-                        href="/">
-                        <img src="{{ asset('images/hero.png') }}" alt="logo" class="h-12">
-                    </a><button class="rounded-lg md:hidden focus:outline-none focus:shadow-outline"
-                        @click="open = !open">
-                        <svg class="size-6" stroke="currentColor" fill="none" viewBox="0 0 24 24">
-                            <path :class="{ 'hidden': open, 'inline-flex': !open }" class="inline-flex"
-                                stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                d="M4 6h16M4 12h16M4 18h16"></path>
-                            <path :class="{ 'hidden': !open, 'inline-flex': open }" class="hidden"
-                                stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                d="M6 18L18 6M6 6l12 12"></path>
-                        </svg>
-                    </button>
+    <div class="relative h-full mx-auto">
+        <div class="lg:text-center pt-12">
+            <div
+                class="px-7 lg:px-24 max-w-6xl mx-auto flex flex-col gap-y-10 lg:flex-row items-center gap-x-10 justify-center py-10 lg:py-14 dark:bg-gray-800">
+                <div class="lg:w-[650px] lg:px-5 flex flex-col gap-y-5">
+                    <h1
+                        class="text-4xl md:text-5xl xl:text-[50px] leading-[1.2] md:max-w-xl md:mx-auto md:text-center lg:text-left lg:mx-0 lg:max-w-full font-medium dark:text-white">
+                        Layanan Terbaik <br>Untuk Hewan Peliharaan Anda
+                    </h1>
+                    <p
+                        class="text-sm md:max-w-xl md:mx-auto lg:mx-0 lg:max-w-full md:text-center lg:text-left dark:text-gray-300">
+                        Kami menyediakan berbagai macam kebutuhan hewan peliharaan Anda
+                    </p>
+                    <div class="flex gap-x-5 flex-col gap-y-2.5 lg:flex-row">
+                        <a href="#"
+                            class="flex w-full lg:w-fit items-center text-white justify-center rounded-lg bg-green-600 px-6 py-2.5 font-semibold hover:shadow-lg hover:drop-shadow transition duration-200">
+                            <span>
+                                Mulai belanja
+                            </span>
+                        </a>
+                        <a href="#"
+                            class="flex w-full lg:w-fit items-center text-green-600 justify-center rounded-lg border border-green-500 px-6 py-2.5 font-semibold hover:shadow-lg hover:drop-shadow transition duration-200 bg-green-50 dark:text-white dark:bg-transparent dark:border-gray-500/50">
+                            <span>
+                                Hubungi kami
+                            </span>
+                        </a>
+                    </div>
                 </div>
-                <nav :class="{ 'flex': open, 'hidden': !open }"
-                    class="flex-col items-center flex-grow hidden gap-6 p-4 px-5 opacity-100 md:px-0 md:pb-0 md:flex md:justify-start md:flex-row lg:p-0 md:mt-0">
-                    <a class="py-2 text-xs font-semibold text-gray-900 uppercase hover:text-gray-400 focus:outline-none focus:shadow-none focus:text-gray-900/90 md:ml-auto"
-                        href="#merk">Merk </a><a
-                        class="py-2 text-xs font-semibold text-gray-900 uppercase hover:text-gray-400 focus:outline-none focus:shadow-none focus:text-gray-900/90"
-                        href="#hewan">Hewan </a><a
-                        class="py-2 text-xs font-semibold text-gray-900 uppercase hover:text-gray-400 focus:outline-none focus:shadow-none focus:text-gray-900/90"
-                        href="#layanan">Layanan </a><a
-                        class="py-2 text-xs font-semibold text-gray-900 uppercase hover:text-gray-400 focus:outline-none focus:shadow-none focus:text-gray-900/90"
-                        href="#blog">Blog </a><a
-                        class="flex items-center justify-center w-auto h-8 px-4 py-2 text-xs font-semibold text-white uppercase transition-all bg-green-600 rounded-full shrink-0 hover:bg-accent-500"
-                        href="#_" role="button">Bergabung franchise kami</a>
-                </nav>
-            </div>
-        </div>
-    </section>
-    <section>
-        <div class="relative h-full py-12 mx-auto">
-            <div class="lg:text-center pt-12">
                 <div
-                    class="px-7 lg:px-24 max-w-6xl mx-auto flex flex-col gap-y-10 lg:flex-row items-center gap-x-10 justify-center py-10 lg:py-14 dark:bg-gray-800">
-                    <div class="lg:w-[650px] lg:px-5 flex flex-col gap-y-5">
-                        <h1
-                            class="text-4xl md:text-5xl xl:text-[50px] leading-[1.2] md:max-w-xl md:mx-auto md:text-center lg:text-left lg:mx-0 lg:max-w-full font-extrabold dark:text-white">
-                            Selamat Datang Di Toko Hewan Kami
-                        </h1>
-                        <p
-                            class="text-sm md:max-w-xl md:mx-auto lg:mx-0 lg:max-w-full md:text-center lg:text-left dark:text-gray-300">
-                            Kami menyediakan berbagai macam kebutuhan hewan peliharaan Anda
-                        </p>
-                        <div class="flex gap-x-5 flex-col gap-y-2.5 lg:flex-row">
-                            <a href="#"
-                                class="flex w-full lg:w-fit items-center text-white justify-center rounded-lg bg-green-600 px-6 py-2.5 font-semibold hover:shadow-lg hover:drop-shadow transition duration-200">
-                                <span>
-                                    Mulai belanja
-                                </span>
-                            </a>
-                            <a href="#"
-                                class="flex w-full lg:w-fit items-center text-green-600 justify-center rounded-lg border border-green-500 px-6 py-2.5 font-semibold hover:shadow-lg hover:drop-shadow transition duration-200 bg-green-50 dark:text-white dark:bg-transparent dark:border-gray-500/50">
-                                <span>
-                                    Hubungi kami
-                                </span>
-                            </a>
-                        </div>
-                    </div>
-                    <div
-                        class="hero-image md:px-5 lg:px-0 w-full lg:w-1/2 rounded-3xl md:pt-2 lg:pt-0 relative isolate z-10">
-                        <img class="rounded-3xl w-full" src="{{ asset('images/hero.png') }}" alt="">
-                    </div>
+                    class="hero-image md:px-5 lg:px-0 w-full lg:w-1/2 rounded-3xl md:pt-2 lg:pt-0 relative isolate z-10">
+                    <img class="rounded-3xl w-full" src="{{ asset('images/hero.png') }}" alt="">
                 </div>
-
             </div>
+
         </div>
+    </div>
     </section>
     <section>
         <div class="h-full max-w-6xl px-8 pb-12 mx-auto md:px-12 lg:px-32">
@@ -260,67 +222,5 @@
             </div>
         </div>
     </section>
-    <footer>
-        <div class="h-full max-w-6xl px-8 py-24 mx-auto md:px-12 lg:px-32">
-            <div class="pt-12 border-t">
-                <div class="border-gray-900 xl:grid xl:grid-cols-3 xl:gap-8">
-                    <div class="text-black">
-                        <div class="inline-flex items-center gap-3">
-                            <p class="text-2xl font-bold uppercase">Toko Hewan</p>
-                        </div>
-                        <p class="mt-2 text-sm text-gray-500 lg:w-4/5">
-                            Layanan terbaik di Indonesia
-                        </p>
-                    </div>
-                    <div class="grid grid-cols-2 gap-8 mt-12 lg:grid-cols-3 lg:mt-0 xl:col-span-2">
-                        <div>
-                            <h3 class="text-black">Informasi</h3>
-                            <ul role="list" class="mt-4 space-y-2">
-                                <li>
-                                    <a href="#_" class="text-sm text-gray-500 hover:text-black">
-                                        Layanan
-                                    </a>
-                                </li>
-                            </ul>
-                        </div>
-                        <div>
-                            <h3 class="text-black">Medsos</h3>
-                            <ul role="list" class="mt-4 space-y-2">
-                                <li>
-                                    <a href="https://twitter.com/lexingtonthemes"
-                                        class="text-sm text-gray-500 hover:text-black">
-                                        @petshoparif
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="https://twitter.com/Mike_Andreuzza"
-                                        class="text-sm text-gray-500 hover:text-black">
-                                        @ibnu
-                                    </a>
-                                </li>
-                            </ul>
-                        </div>
-                        <div class="mt-12 md:mt-0">
-                            <h3 class="text-black">Alamat</h3>
-                            <ul role="list" class="mt-4 space-y-2">
-                                <li>
-                                    <a href="https://lexingtonthemes.com/"
-                                        class="text-sm text-gray-500 hover:text-black">
-                                        Jl. Jend. Sudirman No. 123, Jakarta
-                                    </a>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-                <div class="flex flex-col pt-12 md:flex-row md:items-center md:justify-between">
-                    <p class="text-left">
-                        <span class="mx-auto mt-2 text-sm text-gray-500 lg:mx-0">
-                            © 2021 Toko Hewan. All rights reserved.
-                        </span>
-                    </p>
-                </div>
-            </div>
-        </div>
-    </footer>
+
 </x-guest-layout>

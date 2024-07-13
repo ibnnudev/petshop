@@ -17,7 +17,11 @@
 </head>
 
 <body class="font-sans text-gray-900 antialiased">
-    {{ $slot }}
+    @include('layouts.components.header')
+    <div class="pt-24">
+        {{ $slot }}
+    </div>
+    @include('layouts.components.footer')
 </body>
 
 </html>
