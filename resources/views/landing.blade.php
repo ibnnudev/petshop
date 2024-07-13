@@ -151,7 +151,7 @@
                         </h3>
                         <ul class="max-w-md space-y-1 text-gray-500 list-disc list-inside dark:text-gray-400">
     <li>
-        Termasuk semua dari paket silver +:
+        paket silver +:
     </li>
     <li>
         gropming sesuai ras
@@ -172,7 +172,7 @@
                         </h3>
                         <ul class="max-w-md space-y-1 text-gray-500 list-disc list-inside dark:text-gray-400">
     <li>
-        Termasuk semua dari paket gold ++:
+        paket gold ++:
     </li>
     <li>
         Pilihan makanan premium
