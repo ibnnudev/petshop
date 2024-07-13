@@ -6,10 +6,6 @@ use App\Http\Controllers\HomeController;
 
 use App\Http\Controllers\Admin\UserController;
 
-Route::get('/', function () {
-    return view('welcome');
-});
-
 Route::group(['prefix' => 'dashboard', 'as' => 'dashboard.', 'middleware' => ['auth']], function () {
 
     // Dashboard
