@@ -1,5 +1,6 @@
 <x-guest-layout>
     <div class="px-8 py-14 mx-auto md:px-12 lg:px-32 max-w-6xl">
+        {{-- Nama Halaman --}}
         <div>
             <h1 class="font-bold text-2xl mb-3">
                 Daftar Merek
@@ -31,6 +32,18 @@
                     </li>
                 </ol>
             </nav>
+        </div>
+
+        <div class="grid grid-cols-3 gap-4">
+            <div class="...">02</div>
+            <div class="col-span-2">
+                <div class="grid grid-cols-3 gap-4">
+                    <div class="...">produk</div>
+                    <div class="...">produk</div>
+                    <div class="...">produk</div>
+
+                </div>
+            </div>
         </div>
     </div>
 </x-guest-layout>
