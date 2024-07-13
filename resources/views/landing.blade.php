@@ -6,7 +6,7 @@
                 class="relative flex flex-col w-full max-w-6xl px-8 py-4 mx-auto bg-white md:px-12 md:items-center md:justify-between md:flex-row lg:px-32">
                 <div class="flex flex-row items-center justify-between text-gray-900">
                     <a class="inline-flex items-center gap-3 text-xl font-bold tracking-tight text-gray-900 uppercase"
-                        href="/">Agency</a><button
+                        href="/">Toko Hewan</a><button
                         class="rounded-lg md:hidden focus:outline-none focus:shadow-outline" @click="open = !open">
                         <svg class="size-6" stroke="currentColor" fill="none" viewBox="0 0 24 24">
                             <path :class="{ 'hidden': open, 'inline-flex': !open }" class="inline-flex"
@@ -21,15 +21,15 @@
                 <nav :class="{ 'flex': open, 'hidden': !open }"
                     class="flex-col items-center flex-grow hidden gap-6 p-4 px-5 opacity-100 md:px-0 md:pb-0 md:flex md:justify-start md:flex-row lg:p-0 md:mt-0">
                     <a class="py-2 text-xs font-semibold text-gray-900 uppercase hover:text-gray-400 focus:outline-none focus:shadow-none focus:text-gray-900/90 md:ml-auto"
-                        href="#services">Services </a><a
+                        href="#merk">Merk </a><a
                         class="py-2 text-xs font-semibold text-gray-900 uppercase hover:text-gray-400 focus:outline-none focus:shadow-none focus:text-gray-900/90"
-                        href="#benefits">benefits </a><a
+                        href="#hewan">Hewan </a><a
                         class="py-2 text-xs font-semibold text-gray-900 uppercase hover:text-gray-400 focus:outline-none focus:shadow-none focus:text-gray-900/90"
-                        href="#pricing">pricing </a><a
+                        href="#layanan">Layanan </a><a
                         class="py-2 text-xs font-semibold text-gray-900 uppercase hover:text-gray-400 focus:outline-none focus:shadow-none focus:text-gray-900/90"
-                        href="#faq">faq </a><a
+                        href="#blog">Blog </a><a
                         class="flex items-center justify-center w-auto h-8 px-4 py-2 text-xs font-semibold text-white uppercase transition-all bg-black rounded-full shrink-0 hover:bg-accent-500"
-                        href="#_" role="button">Download Agency</a>
+                        href="#_" role="button">Bergabung franchise kami</a>
                 </nav>
             </div>
         </div>
