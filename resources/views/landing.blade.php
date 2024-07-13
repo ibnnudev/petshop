@@ -68,19 +68,35 @@
     <section>
         <div class="h-full max-w-6xl px-8 pb-12 mx-auto md:px-12 lg:px-32">
             <div class="px-6 mx-auto max-w-7xl lg:px-8">
-                <h2 class="text-lg font-semibold leading-8 text-center text-gray-900">
+                <h2 class="text-xl font-semibold leading-8 text-center text-gray-900">
                     Layanan Kami
                 </h2>
                 <div
-                    class="grid items-center max-w-lg grid-cols-4 mx-auto mt-10 gap-x-8 gap-y-10 sm:max-w-xl sm:grid-cols-6 sm:gap-x-10 lg:mx-0 lg:max-w-none lg:grid-cols-5">
-                    <img class="object-contain w-full col-span-2 max-h-12 lg:col-span-1" src="https://images.unsplash.com/photo-1634190988693-3573885c4e97?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTR8fHNob3BwaW5nJTIwY2F0fGVufDB8fDB8fHww"
-                        alt="#_" width="158" height="48"><img
-                        class="object-contain w-full col-span-2 max-h-12 lg:col-span-1" src="https://images.unsplash.com/photo-1625321171045-1fea4ac688e9?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8Z3Jvb21pbmd8ZW58MHx8MHx8fDA%3D"
-                        alt="#_" width="158" height="48"><img
-                        class="object-contain w-full col-span-2 max-h-12 lg:col-span-1" src="https://plus.unsplash.com/premium_photo-1677165478400-c45a9ecd429e?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NXx8Y2xpbmljJTIwaGV3YW58ZW58MHx8MHx8fDA%3D"
-                        alt="3" width="158" height="48"><img
-                        class="object-contain w-full col-span-2 max-h-12 sm:col-start-2 lg:col-span-1"
-                        src="https://media.istockphoto.com/id/944635170/photo/golden-retriever-puppy-dog-with-toy-on-bed-in-house-or-hotel-scandi-styled-with-green-plants.webp?b=1&s=170667a&w=0&k=20&c=v2qYQ19H9GjIdpBC3_ludjn32ELJBZHoZ707Fw-a14k=" alt="#_" width="158" height="48">
+                    class="grid items-center max-w-lg grid-cols-4 mx-auto mt-20 gap-x-8 gap-y-10 sm:max-w-xl sm:gap-x-10 lg:mx-0 lg:max-w-none">
+                    <div class="space-y-3 text-center">
+                        <img class="service-item w-44 rounded-full object-cover h-44 col-span-2 lg:col-span-1"
+                            src="https://images.unsplash.com/photo-1634190988693-3573885c4e97?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTR8fHNob3BwaW5nJTIwY2F0fGVufDB8fDB8fHww"
+                            alt="#_">
+                        <h1 class="font-medium">Toko</h1>
+                    </div>
+                    <div class="space-y-3 text-center">
+                        <img class="service-item w-44 rounded-full object-cover h-44 col-span-2 lg:col-span-1"
+                            src="https://images.unsplash.com/photo-1625321171045-1fea4ac688e9?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8Z3Jvb21pbmd8ZW58MHx8MHx8fDA%3D"
+                            alt="#_">
+                        <h1 class="font-medium">Grooming</h1>
+                    </div>
+                    <div class="space-y-3 text-center">
+                        <img class="service-item w-44 rounded-full object-cover h-44 col-span-2 lg:col-span-1"
+                            src="https://plus.unsplash.com/premium_photo-1677165478400-c45a9ecd429e?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NXx8Y2xpbmljJTIwaGV3YW58ZW58MHx8MHx8fDA%3D"
+                            alt="3">
+                        <h1 class="font-medium">Klinik</h1>
+                    </div>
+                    <div class="space-y-3 text-center">
+                        <img class="service-item w-44 rounded-full object-cover h-44 col-span-2 sm:col-start-2 lg:col-span-1"
+                            src="https://media.istockphoto.com/id/944635170/photo/golden-retriever-puppy-dog-with-toy-on-bed-in-house-or-hotel-scandi-styled-with-green-plants.webp?b=1&s=170667a&w=0&k=20&c=v2qYQ19H9GjIdpBC3_ludjn32ELJBZHoZ707Fw-a14k="
+                            alt="#_">
+                        <h1 class="font-medium">Penitipan</h1>
+                    </div>
                 </div>
             </div>
         </div>
@@ -89,11 +105,10 @@
         <div class="h-full max-w-6xl px-8 py-24 mx-auto md:px-12 lg:px-32">
             <div class="text-center">
                 <h2 class="text-4xl font-semibold tracking-tighter text-gray-900 lg:text-6xl">
-                    Simple pricing
+                    Harga
                 </h2>
                 <p class="max-w-xs mx-auto mt-4 text-sm text-gray-500">
-                    Explore our range of flexible pricing plans to suit your unique
-                    requirements
+                    Jelajahi paket yang kami tawarkan untuk memenuhi kebutuhan Anda
                 </p>
             </div>
             <div class="grid grid-cols-1 gap-2 mt-24 lg:grid-cols-3">
