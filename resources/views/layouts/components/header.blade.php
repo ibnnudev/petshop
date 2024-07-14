@@ -25,7 +25,7 @@
                     class="py-2 text-xs font-semibold text-gray-900 uppercase hover:text-gray-400 focus:outline-none focus:shadow-none focus:text-gray-900/90"
                     href="#layanan">Layanan </a><a
                     class="py-2 text-xs font-semibold text-gray-900 uppercase hover:text-gray-400 focus:outline-none focus:shadow-none focus:text-gray-900/90"
-                    href="#blog">Blog </a><a
+                    href="{{ route('blog.index') }}">Blog </a><a
                     class="flex items-center justify-center w-auto h-8 px-4 py-2 text-xs font-semibold text-white uppercase transition-all bg-green-600 rounded-full shrink-0 hover:bg-accent-500"
                     href="#_" role="button">Bergabung franchise kami</a>
             </nav>

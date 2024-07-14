@@ -6,6 +6,7 @@ use App\Http\Controllers\HomeController;
 
 use App\Http\Controllers\Admin\UserController;
 use App\Http\Controllers\MerkController;
+use App\Http\Controllers\BlogController;
 
 // harus login
 Route::group(['prefix' => 'dashboard', 'as' => 'dashboard.', 'middleware' => ['auth']], function () {
@@ -33,6 +34,11 @@ Route::middleware('auth')->group(function () {
 // Merk
 Route::group(['prefix' => 'merk'], function () {
     Route::get('/', [MerkController::class, 'index'])->name('merk.index');
+});
+
+// Blog
+Route::group(['prefix' => 'blog'], function () {
+    Route::get('/', [BlogController::class, 'index'])->name('blog.index');
 });
 
 Route::get('/', [HomeController::class, 'index']);
