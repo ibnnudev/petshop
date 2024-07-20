@@ -30,8 +30,7 @@
                 </ol>
             </nav>
         </div>
-
-              <section>
+         <section>
                 <div class="px-8 py-24 mx-auto md:px-12 lg:px-32 max-w-7xl">
                   <ol class="grid grid-cols-1 gap-x-8 gap-y-10 lg:grid-cols-3 sm:grid-cols-2" role="list">
                     <li class="lgcol-span-2">
@@ -46,7 +45,8 @@
                         </p>
                         <h3 class="mt-5 text-lg font-medium leading-6 text-black">Jasa Penitipan Anabul</h3>
                         <p class="mt-2 text-base font-medium text-gray-500 text-balance line-clamp-10">
-                          Berlibur atau melakukan liburan menjadi aktivitas yang penting untuk dilakukan. Hal ini sudah menjadi gaya hidup dan kebutuhan banyak orang…
+                          Berlibur atau melakukan liburan menjadi aktivitas yang penting untuk dilakukan.
+                          Hal ini sudah menjadi gaya hidup dan kebutuhan banyak orang…
                         </p>
                       </div>
                     </li>
